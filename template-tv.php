@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: TV
+ * Template Name: Vidoes Template
  */
 //do_action('luca/theme/page-header'); ?>
 
@@ -48,7 +48,7 @@
               setup_postdata($video);
             ?>
               <div class="col-sm-4 col-md-4 col-verticalSpacing u-smartClear">
-                <div class="videoPlayer" data-title="<?php echo $video->post_title; ?>" data-video='<?php echo get_field('video', $video->ID); ?>'>
+                <div class="videoPlayer" data-title="<?php echo $video->post_title; ?>" data-video='<?php echo get_field('video', $video->ID); ?>' data-transcript="<?php echo get_field('video_transcript', $video->ID); ?>">
                   <?php $thumbnail = get_field('thumbnail', $video->ID); ?>
                   <?php if($thumbnail): ?>
                     <img width="380" src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $video->post_title; ?>" />
@@ -77,9 +77,10 @@
         <h4 class="modal-title tv-modal-title"></h4>
       </div>
       <div class="modal-body">
-        <div class="embed-responsive embed-responsive-16by9 tv-modal-body">
-        
-        </div>
+          <div class="embed-responsive embed-responsive-16by9 tv-modal-body">
+          </div>
+          <div class="tv-modal-transcript">
+          </div>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

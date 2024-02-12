@@ -3,15 +3,15 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 
 	acf_add_local_field_group( array(
 		'key' => 'group_6498eca8249ae',
-		'title' => 'TV',
+		'title' => 'Videos',
 		'fields' => array(
 			array(
 				'key' => 'field_6498eca9a558f',
-				'label' => 'Block Title',
+				'label' => 'Section Title',
 				'name' => 'block_title',
 				'aria-label' => '',
 				'type' => 'text',
-				'instructions' => '',
+				'instructions' => 'Optional Title for the Videos Section. If left blank, the title will not be displayed.',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => array(
@@ -59,7 +59,7 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 				'name' => 'featured_video_content',
 				'aria-label' => '',
 				'type' => 'wysiwyg',
-				'instructions' => '',
+				'instructions' => 'The content that will be displayed to the right of the featured video.',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => array(
@@ -80,7 +80,7 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 				'name' => 'videos',
 				'aria-label' => '',
 				'type' => 'relationship',
-				'instructions' => '',
+				'instructions' => 'Select the videos you want to display on this page. You can select multiple videos.',
 				'required' => 1,
 				'conditional_logic' => 0,
 				'wrapper' => array(
@@ -137,7 +137,7 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 
 	acf_add_local_field_group( array(
 		'key' => 'group_6498f3e925a4d',
-		'title' => 'TV Video',
+		'title' => 'Video',
 		'fields' => array(
 			array(
 				'key' => 'field_6498b3e976983',
@@ -145,11 +145,11 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 				'name' => 'video',
 				'aria-label' => '',
 				'type' => 'oembed',
-				'instructions' => '',
+				'instructions' => 'Add the link to the video (Not the embed code), video providers like YouTube & Vimeo work best but others are supported.',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => array(
-					'width' => '',
+					'width' => '50',
 					'class' => '',
 					'id' => '',
 				),
@@ -167,7 +167,7 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => array(
-					'width' => '',
+					'width' => '50',
 					'class' => '',
 					'id' => '',
 				),
@@ -183,6 +183,27 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 				'mime_types' => '',
 				'preview_size' => 'medium',
 			),
+			array(
+				'key' => 'field_6498b3e976963',
+				'label' => 'Video Transcript',
+				'name' => 'video_transcript',
+				'aria-label' => '',
+				'type' => 'wysiwyg',
+				'instructions' => 'This will be displayed next to the video player. This will only show when the video is clicked on.',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'admin_only' => 0,
+				'default_value' => '',
+				'tabs' => 'all',
+				'toolbar' => 'full',
+				'media_upload' => 1,
+				'delay' => 0,
+			)
 		),
 		'location' => array(
 			array(
