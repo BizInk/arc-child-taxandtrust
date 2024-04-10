@@ -2,6 +2,7 @@
 /**
  * Template Name: Front page
  */
+// get_template_part('templates/front/nktv'); // Front Page Videos
 ?>
 
 <?php luca()->getModule('columns')->renderBlock('front-columns', 'default', ['wrapper' => 'section section-frontColumns', 'container' => true, 'modifier' => 'mod-flowOverTop']); ?>
@@ -11,8 +12,6 @@
 <?php luca()->getModule('banners')->renderBlock('front-banner2', 'default', ['wrapper' => 'section section-frontBanner2']); ?>
 
 <?php get_template_part('templates/front/columns-background'); ?>
-
-<?php get_template_part('templates/front/nktv'); ?>
 
 <?php luca()->getModule('banners')->renderBlock('front-banner', 'default', ['wrapper' => 'section section-frontBanner']); ?>
 
