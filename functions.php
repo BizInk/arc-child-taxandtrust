@@ -61,6 +61,6 @@ require 'plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 $myUpdateChecker = PucFactory::buildUpdateChecker('https://github.com/BizInk/arc-child-taxandtrust',__FILE__,'arc-child-taxandtrust');
 // Set the branch that contains the stable release.
-$myUpdateChecker->setBranch('master');
+$myUpdateChecker->setBranch('main');
 // Using a private repository, specify the access token 
 $myUpdateChecker->setAuthentication('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');
